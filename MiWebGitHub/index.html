@@ -22,7 +22,7 @@
         <!--Estilos, esto esta escrito en otro lenguaje, css-->
         <style>
             /*
-            selector{              Esto es un comentario con pseudocidog para ver la estructura
+            selector{              Esto es un comentario con pseudocodigo para ver la estructura
             atributo:valor;
             atributo:valor;
             atributo:valor;
@@ -61,15 +61,18 @@
                 padding: 0px;               /*Anula el margen interior por defecto*/
                 display: flex;              /*Esto lo pone en linea en vez de en lista vertical*/
                 justify-content: center;    /*Esto lo centra, hay mas modos que se pueden ver en flexbox.jocarsa.com*/
-                gap: 10px                   /*Distancia entre los elementos de la lista en horizontal*/
+                gap: 1px                   /*Distancia entre los elementos de la lista en horizontal*/
             }
             nav ul li a{
                 text-decoration: none;              /*Anula los estilos de subrayado*/
                 color: white;                     /*Color de la letra blanco*/
                 background-color: turquoise;      /*El fondo de la letra turquesa*/
                 padding: 5px;                       /*MArgen interno*/
-                font-size: 20px;                     /*Tamaño de la fuente*/
-                text-transform: capitalize;         /*MAyusculas*/
+                font-size: 15px;                     /*Tamaño de la fuente*/
+                text-transform:uppercase;            /* Texto va en mayusculas */
+                display:block;                      /* Permito a los elementos que sean bloques */
+                width:80px;                         /* Su anchura es de 60 pixeles */
+                text-align:center;                  /* Alineo el texto al centro */
             }
 
              /*Con esto evitamos ques imagenes se salgan, asi no hya que poner los px manualmente*/
@@ -92,7 +95,7 @@
             }
             .bloque p{
                 flex: 1;
-                font-size: 10px;
+                font-size: 13px;
                 text-align: justify;
             }
             #desarrollo .bloque{
@@ -130,7 +133,7 @@
                 <ul>                                                        <!--ul e spara una lista-->
                     <li><a href="#inicio">Inicio</a></li>                   <!--li es para un elemento libre de la lista-->
                     <li><a href="#sobre_mi">Sobre mi</a></li>
-                    <li><a href="#docencia">Docencia</a></li>
+                    <li><a href="#estudios">Estudios</a></li>
                     <li><a href="#desarrollo">Desarrollo</a></li>
                     <li><a href="#diseño">Diseño</a></li>
                     <li><a href="#portafolio">portafolio</a></li>             <!--El a herf= es lo que nos vincula con las secciones de abajo-->
@@ -146,22 +149,22 @@
             <section id="inicio">                                           <!--Cada elemto del navegador tiene que tener su seccion-->
                 <h3>Incio</h3>                                              <!--Aqui es a donde nos direccionara el menu de antes-->
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mauris.</p>
-                <img src="Pinguistola.jpg" alt="Pingüistola"></img>         <!--Esto es para que salga una imagen alojada en la carpeta raiz y  el alt sera texto que saldra si no carga la imagen-->
+                <img src="imagenes/Pinguistola.jpg" alt="Pingüistola"></img>         <!--Esto es para que salga una imagen alojada en la carpeta raiz y  el alt sera texto que saldra si no carga la imagen-->
             </section>
             
 
             <section id="sobre_mi">                                         <!--El href dentro del a(ancla) coincide con la id de la seccion, menos por la almoadilla-->
                 <h3>Sobre mi</h3>
                 <div class="bloque">
-                    <img src="Pingu.jpg" alt="pingu">
+                    <img src="imagenes/Pingu.jpg" alt="pingu">
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit egestas nullam inceptos dignissim vitae, eget pulvinar vivamus magna libero. Bibendum laoreet imperdiet montes lobortis torquent eros maecenas ridiculus volutpat congue, ultrices placerat ut ac hendrerit mi vestibulum praesent at consequat turpis, natoque magnis molestie convallis tincidunt platea primis eleifend dui.</p>
                 </div>
             </section>
 
-            <section id="docencia">
-                <h3>Docencia</h3>
+            <section id="estudios">
+                <h3>Estudios</h3>
                 <div class="bloque">
-                    <img src="Pingu.jpg" alt="pingu">
+                    <img src="imagenes/Pingu.jpg" alt="pingu">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
@@ -169,15 +172,15 @@
             <section id="desarrollo">
                 <h3>Desarrollo</h3>
                 <div class="bloque">
-                    <img src="Pingu.jpg" alt="pingu">
+                    <img src="imagenes/Pingu.jpg" alt="pingu">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
 
-            <section id="diseno">
+            <section id="diseño">
                 <h3>Diseño</h3>
                 <div class="bloque">
-                    <img src="Pingu.jpg" alt="pingu">
+                    <img src="imagenes/Pingu.jpg" alt="pingu">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </section>
@@ -188,19 +191,19 @@
                     <article>
                         <h4>Elemento del portafolio 1</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit egestas nullam inceptos dignissim vitae, eget pulvinar vivamus magna libero. Bibendum laoreet imperdiet montes lobortis torquent eros maecenas ridiculus volutpat congue, ultrices placerat ut ac hendrerit mi vestibulum praesent at consequat turpis, natoque magnis molestie convallis tincidunt platea primis eleifend dui.</p>
-                        <img src="pingutrabajando.jpg" alt="en proceso">
+                        <img src="imagenes/pingutrabajando.jpg" alt="en proceso">
                     </article>
 
                     <article>
                         <h4>Elemento del portafolio 2</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit egestas nullam inceptos dignissim vitae, eget pulvinar vivamus magna libero. Bibendum laoreet imperdiet montes lobortis torquent eros maecenas ridiculus volutpat congue, ultrices placerat ut ac hendrerit mi vestibulum praesent at consequat turpis, natoque magnis molestie convallis tincidunt platea primis eleifend dui.</p>
-                        <img src="pingutrabajando.jpg" alt="en proceso">
+                        <img src="imagenes/pingutrabajando.jpg" alt="en proceso">
                     </article>
 
                     <article>
                         <h4>Elemento del portafolio 3</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit egestas nullam inceptos dignissim vitae, eget pulvinar vivamus magna libero. Bibendum laoreet imperdiet montes lobortis torquent eros maecenas ridiculus volutpat congue, ultrices placerat ut ac hendrerit mi vestibulum praesent at consequat turpis, natoque magnis molestie convallis tincidunt platea primis eleifend dui.</p>
-                        <img src="pingutrabajando.jpg" alt="en proceso">
+                        <img src="imagenes/pingutrabajando.jpg" alt="en proceso">
                     </article>
                 </div>                                          <!--El iframe es una linea de codigo copiada que muestra un mapa de google-->
             </section>
